@@ -4,7 +4,7 @@ const app = require("./app");
 test("la página principal responde", async () => {
   const res = await request(app).get("/");
   expect(res.status).toBe(200);
-  expect(res.text).toContain("Ambientes efímeros");
+  expect(res.text).toContain("Actividad 2.3. Ephemeral environments");
 });
 
 test("suma dos números", async () => {
